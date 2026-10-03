@@ -1,0 +1,55 @@
+{
+  "schema": "com.turpial.code-review-evidence/v1",
+  "candidate": {
+    "repository": "<repository>",
+    "base": "<base-or-null>",
+    "head": "<exact-sha>",
+    "reference": "<branch-or-pr>"
+  },
+  "inputs": {
+    "spec": ["<reference>"],
+    "architecture": ["<reference>"],
+    "repository_contracts": ["<reference>"]
+  },
+  "reviewer": {
+    "independent_from_implementation": true,
+    "notes": "<notes>"
+  },
+  "coverage": {
+    "reviewed": ["<responsibility>"],
+    "not_reviewed": ["<surface>"]
+  },
+  "findings": [
+    {
+      "id": "CR-001",
+      "title": "<title>",
+      "severity": "P2",
+      "blocking": true,
+      "status": "OPEN",
+      "contract_or_criterion": "<reference>",
+      "evidence": ["<candidate-bound evidence>"],
+      "observed_behavior": "<fact>",
+      "impact_or_risk": "<impact>",
+      "reproduction_or_reasoning": "<steps>",
+      "recommended_correction": "<change>",
+      "closure_test": "<proof>"
+    }
+  ],
+  "validation": [
+    {
+      "check": "<command-or-procedure>",
+      "head": "<exact-sha>",
+      "result": "<result>",
+      "proves": "<scope>"
+    }
+  ],
+  "limitations": ["<limitation>"],
+  "summary": {
+    "open_blocking_findings": 1,
+    "open_non_blocking_findings": 0,
+    "resolved_findings": 0,
+    "dismissed_findings": 0,
+    "deferred_findings": 0
+  },
+  "result": "CODE_REVIEW_FINDINGS"
+}

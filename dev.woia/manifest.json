@@ -1,0 +1,25 @@
+{
+  "schema": "dev.woia.provider-manifest/v1",
+  "version": "0.5.0",
+  "authoring_profile": "thin",
+  "department": "software",
+  "capability": "code-review",
+  "skill": "code-review",
+  "source_lineage": {
+    "repository": "Turpial-AI-Academy/code-review-agent-plugin",
+    "version": "1.0.1",
+    "commit": "c8183bfad6564d09bd4f88f0570f341006c30619"
+  },
+  "migrated_portable_paths": [
+    "skills/code-review/SKILL.md",
+    "skills/code-review/assets/README.md",
+    "skills/code-review/assets/review-evidence.template.json",
+    "skills/code-review/assets/review-report.template.md",
+    "skills/code-review/references/DISCOVERY_MODEL.md",
+    "skills/code-review/references/EVIDENCE_PROTOCOL.md",
+    "skills/code-review/references/FINDING_MODEL.md",
+    "skills/code-review/references/README.md",
+    "skills/code-review/references/REVIEW_PLAYBOOK.md",
+    "skills/code-review/references/REVIEW_STANDARD.md"
+  ]
+}
