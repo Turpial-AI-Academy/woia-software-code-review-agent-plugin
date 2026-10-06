@@ -2,6 +2,8 @@
 
 ## 0.5.1 - 2026-10-05
 
+- Preserve portable domain invariants from the original suite without obsolete repository authoring assertions.
+
 - Restore capability-specific domain regressions for centralized thin certification.
 - Restore the canonical MIT license text.
 

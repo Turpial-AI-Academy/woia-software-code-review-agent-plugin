@@ -7,6 +7,13 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 
 const skillRoot = path.join(ROOT, "skills", "code-review");
 
+test("code review preserves exact source, specification, architecture, and evidence boundaries", async () => {
+  const skill = await readFile(path.join(skillRoot, "SKILL.md"), "utf8");
+  for (const phrase of ["source head", "SPEC", "architecture", "review evidence"]) {
+    assert.match(skill, new RegExp(phrase, "i"));
+  }
+});
+
 test("bounded review fast path keeps independence without unconditional reference loading", async () => {
   const skill = await readFile(path.join(skillRoot, "SKILL.md"), "utf8");
   const policy = skill.match(/## Fast path and reference loading\n([\s\S]+?)\n## /)?.[1];
