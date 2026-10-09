@@ -7,17 +7,27 @@
     "reference": "<branch-or-pr>"
   },
   "inputs": {
-    "spec": ["<reference>"],
-    "architecture": ["<reference>"],
-    "repository_contracts": ["<reference>"]
+    "spec": [
+      "<reference>"
+    ],
+    "architecture": [
+      "<reference>"
+    ],
+    "repository_contracts": [
+      "<reference>"
+    ]
   },
   "reviewer": {
     "independent_from_implementation": true,
     "notes": "<notes>"
   },
   "coverage": {
-    "reviewed": ["<responsibility>"],
-    "not_reviewed": ["<surface>"]
+    "reviewed": [
+      "<responsibility>"
+    ],
+    "not_reviewed": [
+      "<surface>"
+    ]
   },
   "findings": [
     {
@@ -27,7 +37,9 @@
       "blocking": true,
       "status": "OPEN",
       "contract_or_criterion": "<reference>",
-      "evidence": ["<candidate-bound evidence>"],
+      "evidence": [
+        "<candidate-bound evidence>"
+      ],
       "observed_behavior": "<fact>",
       "impact_or_risk": "<impact>",
       "reproduction_or_reasoning": "<steps>",
@@ -43,7 +55,9 @@
       "proves": "<scope>"
     }
   ],
-  "limitations": ["<limitation>"],
+  "limitations": [
+    "<limitation>"
+  ],
   "summary": {
     "open_blocking_findings": 1,
     "open_non_blocking_findings": 0,
