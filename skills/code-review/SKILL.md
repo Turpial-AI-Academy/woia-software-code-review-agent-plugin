@@ -42,7 +42,7 @@ gate:
   and the reviewed source head may proceed to testing
 ~~~
 
-The skill is independently useful without ASPS.
+The skill is independently useful.
 
 ## Fast path and reference loading
 
